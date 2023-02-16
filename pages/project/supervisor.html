@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/styles.css">
+        <title>Audita-supervisor</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/pages/home.html"><img
+                            src="/img/logo-horizontal-menu.png" height="50"
+                            loading="lazy"
+                            alt=""></a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"">Acceso Usuarios</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"
+                                            href="/pages/user/enrollment.html">Registro</a></li>
+                                    <li><a class="dropdown-item" href="#">Usuarios
+                                            y perfiles</a></li>
+                                    <li><a class="dropdown-item" href="#">Autorización
+                                            de Acceso</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"">Proyecto de Auditoría</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item"
+                                            href="/pages/project/entity.html">Datos
+                                            entidad auditada</a></li>
+                                    <li><a class="dropdown-item" href="/pages/project/auditor.html">Datos
+                                            auditor Asignado</a></li>
+                                    <li><a class="dropdown-item" href="/pages/project/supervisor.html">Datos
+                                            Supervisor</a></li>
+                                    <li><a class="dropdown-item" href="/pages/project/notifica.html">Notificaciones</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"">Bliblioteca de Guías</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Carga
+                                            de Archivos</a></li>
+                                    <li><a class="dropdown-item" href="#">Visualización
+                                            de archivos</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"">Herramientas</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Firma
+                                            Electrónica</a></li>
+                                    <li><a class="dropdown-item" href="#">Resumen
+                                            de tiempo Auditoría</a></li>
+                                    <li><a class="dropdown-item" href="#">Actividades</a></li>
+                                    <li><a class="dropdown-item" href="#">Marcas
+                                            de Auditoría</a></li>
+                                    <li><a class="dropdown-item" href="#">Tipos
+                                            de monedas</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"">Importar Archivos</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Importar
+                                            Estados Financieros</a></li>
+                                    <li><a class="dropdown-item" href="#">Importar
+                                            Integraciones</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"">Archivo Permanente</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Información
+                                            General</a></li>
+                                    <li><a class="dropdown-item" href="#">Estructura
+                                            Organizacional</a></li>
+                                    <li><a class="dropdown-item" href="#">Leyes
+                                            y Regulaciones</a></li>
+                                    <li><a class="dropdown-item" href="#">Planificación
+                                            de Operaciones</a></li>
+                                    <li><a class="dropdown-item" href="#">Información
+                                            Administrativa</a></li>
+                                    <li><a class="dropdown-item" href="#">Información
+                                            Presupuestaria</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"
+                                    role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"">Auditoría</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Directrices</a></li>
+                                    <li><a class="dropdown-item" href="#">Planeación</a></li>
+                                    <li><a class="dropdown-item" href="#">Muestreo</a></li>
+                                    <li><a class="dropdown-item" href="#">Ejecución</a></li>
+                                    <li><a class="dropdown-item" href="#">Análisis</a></li>
+                                    <li><a class="dropdown-item" href="#">Informe</a></li>
+                                    <li><a class="dropdown-item" href="#">Seguimiento</a></li>
+                                    <li><a class="dropdown-item" href="#">Calidad</a></li>
+                                </ul>
+                            </li>
+
+
+
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="row text-center h-100">
+                <div class="col">
+                    <br>
+                    <h1>Datos de Supervisor</h1>
+                    <p class="fst-italic">Complete todos los detalles, algunos
+                        son obligatorios
+                    </p>
+                    <br>
+                </div>
+            </div>
+
+            <form method="post" action="">
+                <div class="row">
+                    <div class="col">
+
+                    </div>
+                    <div class="col-4">
+                        <div class="form-group">
+                            <label class="fw-semibold for="nombre">Nombre de Supervisor</label>
+                            <input id="nombre" class="form-control" type="text" required="required"
+                                placeholder="Nombre completo">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="fw-semibold for="direccion">Cargo</label>
+                            <input id="direccion" class="form-control"
+                                type="text" placeholder="Cargo">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="fw-semibold for="pais">Colegiado No.</label>
+                            <input id="pais" class="form-control"
+                                type="text" placeholder="Colegiado">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="fw-semibold for="ciudad">Tipo de Auditoría</label>
+                            <input id="ciudad" class="form-control"
+                                type="text" placeholder="Tipo">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="fw-semibold for="nit">Período de Auditoría</label>
+                            <input id="nit" class="form-control"
+                                type="text" placeholder="Período">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="fw-semibold for="nss">Nombramiento</label>
+                            <input id="nss" class="form-control"
+                                type="text" placeholder="Nombramiento">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="fw-semibold for="rs">Fecha Nombramiento</label>
+                            <input id="rs" class="form-control"
+                                type="date" placeholder="Representante Legal">
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label class="fw-semibold for="pc">Asignación de Tareas</label>
+                            <input id="pc" class="form-control"
+                                type="text" placeholder="Tareas">
+                        </div>
+                    </div>
+                    <div class="col-1">
+
+                    </div>
+                    <div class="col-4">
+                        <div class="row m-5">
+                            <button class="btn btn-primary btn-block"
+                                type="button" onclick="">Guardar</button>
+                        </div>
+
+                        <div class="row m-5">
+                            <button class="btn btn-primary btn-block"
+                                type="button" onclick="">Borrar</button>
+                        </div>
+
+                        <div class="row m-5">
+                            <button class="btn btn-primary btn-block "
+                                type="button" onclick="">Imprimir</button>
+                        </div>
+
+                    </div>
+                    <div class="col">
+
+                    </div>
+                </div>
+                
+                
+
+
+            </form>
+
+
+        </main>
+        <footer>
+
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous">
+        </script>
+    </body>
+</html>
