@@ -10,7 +10,7 @@
             integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
             crossorigin="anonymous">
         <link rel="stylesheet" href="/css/styles.css">
-        <title>Audita-supervisor</title>
+        <title>Audita | Carga Archivos</title>
     </head>
     <body>
         <header>
@@ -50,11 +50,13 @@
                                     <li><a class="dropdown-item"
                                             href="/pages/project/entity.html">Datos
                                             entidad auditada</a></li>
-                                    <li><a class="dropdown-item" href="/pages/project/auditor.html">Datos
+                                    <li><a class="dropdown-item"
+                                            href="/pages/project/auditor.html">Datos
                                             auditor Asignado</a></li>
-                                    <li><a class="dropdown-item" href="/pages/project/supervisor.html">Datos
+                                    <li><a class="dropdown-item"
+                                            href="/pages/project/supervisor.html">Datos
                                             Supervisor</a></li>
-                                    <li><a class="dropdown-item" href="/pages/project/notifica.html">Notificaciones</a></li>
+                                    <li><a class="dropdown-item" href="#">Notificaciones</a></li>
                                 </ul>
                             </li>
 
@@ -63,7 +65,8 @@
                                     role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false"">Bliblioteca de Guías</a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="/pages/library/file-upload.html">Carga
+                                    <li><a class="dropdown-item"
+                                            href="/pages/library/file-upload.html">Carga
                                             de Archivos</a></li>
                                     <li><a class="dropdown-item" href="#">Visualización
                                             de archivos</a></li>
@@ -144,100 +147,50 @@
         </header>
         <main>
             <div class="row text-center h-100">
+                
                 <div class="col">
                     <br>
-                    <h1>Datos de Supervisor</h1>
-                    <p class="fst-italic">Complete todos los detalles, algunos
-                        son obligatorios
+                    <h1>Biblioteca Guía</h1>
+                    <p class="fst-italic">En esta área puede visualizar todos los archivos
+                        necesarios para el trabajo de auditoría.
+                    </p>
+                    <p class="fst-italic">
+                        Estas guías son una serie de pasos mínimos a desarrollar durante el
+                        proceso en base a normas  ya establecidas.
                     </p>
                     <br>
                 </div>
             </div>
-
-            <form method="post" action="">
-                <div class="row">
-                    <div class="col">
-
+            <br>
+            
+            <div class=" row d-flex flex-row">
+                <div class="col-1 d-flex flex-column">
+                    
+                </div>
+                <div class="col-3 d-flex flex-column">
+                    <div class="row pt-2">
+                        <button class="btn btn-primary btn-block" type="submit">Guía de Planificación</button>
                     </div>
-                    <div class="col-4">
-                        <div class="form-group">
-                            <label class="fw-semibold for="nombre">Nombre de Supervisor</label>
-                            <input id="nombre" class="form-control" type="text" required="required"
-                                placeholder="Nombre completo">
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <label class="fw-semibold for="direccion">Cargo</label>
-                            <input id="direccion" class="form-control"
-                                type="text" placeholder="Cargo">
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <label class="fw-semibold for="pais">Colegiado No.</label>
-                            <input id="pais" class="form-control"
-                                type="text" placeholder="Colegiado">
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <label class="fw-semibold for="ciudad">Tipo de Auditoría</label>
-                            <input id="ciudad" class="form-control"
-                                type="text" placeholder="Tipo">
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <label class="fw-semibold for="nit">Período de Auditoría</label>
-                            <input id="nit" class="form-control"
-                                type="text" placeholder="Período">
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <label class="fw-semibold for="nss">Nombramiento</label>
-                            <input id="nss" class="form-control"
-                                type="text" placeholder="Nombramiento">
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <label class="fw-semibold for="rs">Fecha Nombramiento</label>
-                            <input id="rs" class="form-control"
-                                type="date" placeholder="Representante Legal">
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <label class="fw-semibold for="pc">Asignación de Tareas</label>
-                            <input id="pc" class="form-control"
-                                type="text" placeholder="Tareas">
-                        </div>
+                    <div class="row pt-2">
+                        <button class="btn btn-primary btn-block" type="submit">Guía de Evaluación</button>
                     </div>
-                    <div class="col-1">
-
+                    <div class="row pt-2">
+                        <button class="btn btn-primary btn-block" type="submit">Guía de Resultados</button>
                     </div>
-                    <div class="col-4">
-                        <div class="row m-5">
-                            <button class="btn btn-primary btn-block"
-                                type="button" onclick="">Guardar</button>
-                        </div>
-
-                        <div class="row m-5">
-                            <button class="btn btn-primary btn-block"
-                                type="button" onclick="">Borrar</button>
-                        </div>
-
-                        <div class="row m-5">
-                            <button class="btn btn-primary btn-block "
-                                type="button" onclick="">Imprimir</button>
-                        </div>
-
+                    <div class="row pt-2">
+                        <button class="btn btn-primary btn-block" type="submit">Guía de Ejecución</button>
                     </div>
-                    <div class="col">
-
+                    <div class="row pt-2">
+                        <button class="btn btn-primary btn-block" type="submit">Otros</button>
                     </div>
                 </div>
-                
-                
-
-
-            </form>
-
+                <div class="col-1 d-flex flex-column">
+                    
+                </div>
+                <div class="col d-flex flex-column">
+                    <iframe src="https://docs.google.com/gview?url=https://audita.pcychips.com/static/auditapdf.pdf&embedded=true" style="width:100%; height:700px;"></iframe>
+                </div>
+            </div>
 
         </main>
         <footer>
