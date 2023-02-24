@@ -1,325 +1,302 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-            rel="stylesheet"
-            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-            crossorigin="anonymous">
-        <link rel="stylesheet" href="/css/styles.css">
-        <title>Document</title>
-    </head>
-    <body>
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="/pages/home.html"><img
-                            src="/img/logo-horizontal-menu.png" height="50"
-                            loading="lazy"
-                            alt=""></a>
-                    <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false"">Acceso Usuarios</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
-                                            href="/pages/user/enrollment.html">Registro</a></li>
-                                    <li><a class="dropdown-item" href="#">Usuarios
-                                            y perfiles</a></li>
-                                    <li><a class="dropdown-item" href="#">Autorización
-                                            de Acceso</a></li>
-                                </ul>
-                            </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false"">Proyecto de Auditoría</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
-                                            href="/pages/project/entity.html">Datos
-                                            entidad auditada</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="/pages/project/auditor.html">Datos
-                                            auditor Asignado</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="/pages/project/supervisor.html">Datos
-                                            Supervisor</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="/pages/project/notifica.html">Notificaciones</a></li>
-                                </ul>
-                            </li>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Document</title>
+</head>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false"">Bliblioteca de Guías</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
-                                            href="/pages/library/file-upload.html">Carga
-                                            de Archivos</a></li>
-                                    <li><a class="dropdown-item"
-                                            href="/pages/library/guides.html">Visualización
-                                            de archivos</a></li>
-                                </ul>
-                            </li>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/pages/home.html"><img src="/img/logo-horizontal-menu.png" height="50"
+                        loading="lazy" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false"">Acceso Usuarios</a>
+                                <ul class=" dropdown-menu">
+                        <li><a class="dropdown-item" href="/pages/user/enrollment.html">Registro</a></li>
+                        <li><a class="dropdown-item" href="#">Usuarios
+                                y perfiles</a></li>
+                        <li><a class="dropdown-item" href="#">Autorización
+                                de Acceso</a></li>
+                    </ul>
+                    </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false"">Herramientas</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item"
-                                            href="/pages/tools/signature.html">Firma
-                                            Electrónica</a></li>
-                                    <li><a class="dropdown-item" href="/pages/tools/time-summary.html">Resumen
-                                            de tiempo Auditoría</a></li>
-                                    <li><a class="dropdown-item" href="#">Actividades</a></li>
-                                    <li><a class="dropdown-item" href="#">Marcas
-                                            de Auditoría</a></li>
-                                    <li><a class="dropdown-item" href="#">Tipos
-                                            de monedas</a></li>
-                                </ul>
-                            </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"">Proyecto de Auditoría</a>
+                                <ul class=" dropdown-menu">
+                    <li><a class="dropdown-item" href="/pages/project/entity.html">Datos
+                            entidad auditada</a></li>
+                    <li><a class="dropdown-item" href="/pages/project/auditor.html">Datos
+                            auditor Asignado</a></li>
+                    <li><a class="dropdown-item" href="/pages/project/supervisor.html">Datos
+                            Supervisor</a></li>
+                    <li><a class="dropdown-item" href="/pages/project/notifica.html">Notificaciones</a></li>
+                    </ul>
+                    </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false"">Importar Archivos</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Importar
-                                            Estados Financieros</a></li>
-                                    <li><a class="dropdown-item" href="#">Importar
-                                            Integraciones</a></li>
-                                </ul>
-                            </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"">Bliblioteca de Guías</a>
+                                <ul class=" dropdown-menu">
+                    <li><a class="dropdown-item" href="/pages/library/file-upload.html">Carga
+                            de Archivos</a></li>
+                    <li><a class="dropdown-item" href="/pages/library/guides.html">Visualización
+                            de archivos</a></li>
+                    </ul>
+                    </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false"">Archivo Permanente</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Información
-                                            General</a></li>
-                                    <li><a class="dropdown-item" href="#">Estructura
-                                            Organizacional</a></li>
-                                    <li><a class="dropdown-item" href="#">Leyes
-                                            y Regulaciones</a></li>
-                                    <li><a class="dropdown-item" href="#">Planificación
-                                            de Operaciones</a></li>
-                                    <li><a class="dropdown-item" href="#">Información
-                                            Administrativa</a></li>
-                                    <li><a class="dropdown-item" href="#">Información
-                                            Presupuestaria</a></li>
-                                </ul>
-                            </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"">Herramientas</a>
+                                <ul class=" dropdown-menu">
+                    <li><a class="dropdown-item" href="/pages/tools/signature.html">Firma
+                            Electrónica</a></li>
+                    <li><a class="dropdown-item" href="/pages/tools/time-summary.html">Resumen
+                            de tiempo Auditoría</a></li>
+                    <li><a class="dropdown-item" href="/pages/tools/activities.html">Actividades</a></li>
+                    <li><a class="dropdown-item" href="#">Marcas
+                            de Auditoría</a></li>
+                    <li><a class="dropdown-item" href="#">Tipos
+                            de monedas</a></li>
+                    </ul>
+                    </li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"
-                                    role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false"">Auditoría</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Directrices</a></li>
-                                    <li><a class="dropdown-item" href="#">Planeación</a></li>
-                                    <li><a class="dropdown-item" href="#">Muestreo</a></li>
-                                    <li><a class="dropdown-item" href="#">Ejecución</a></li>
-                                    <li><a class="dropdown-item" href="#">Análisis</a></li>
-                                    <li><a class="dropdown-item" href="#">Informe</a></li>
-                                    <li><a class="dropdown-item" href="#">Seguimiento</a></li>
-                                    <li><a class="dropdown-item" href="#">Calidad</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"">Importar Archivos</a>
+                                <ul class=" dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Importar
+                            Estados Financieros</a></li>
+                    <li><a class="dropdown-item" href="#">Importar
+                            Integraciones</a></li>
+                    </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"">Archivo Permanente</a>
+                                <ul class=" dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Información
+                            General</a></li>
+                    <li><a class="dropdown-item" href="#">Estructura
+                            Organizacional</a></li>
+                    <li><a class="dropdown-item" href="#">Leyes
+                            y Regulaciones</a></li>
+                    <li><a class="dropdown-item" href="#">Planificación
+                            de Operaciones</a></li>
+                    <li><a class="dropdown-item" href="#">Información
+                            Administrativa</a></li>
+                    <li><a class="dropdown-item" href="#">Información
+                            Presupuestaria</a></li>
+                    </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false"">Auditoría</a>
+                                <ul class=" dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Directrices</a></li>
+                    <li><a class="dropdown-item" href="#">Planeación</a></li>
+                    <li><a class="dropdown-item" href="#">Muestreo</a></li>
+                    <li><a class="dropdown-item" href="#">Ejecución</a></li>
+                    <li><a class="dropdown-item" href="#">Análisis</a></li>
+                    <li><a class="dropdown-item" href="#">Informe</a></li>
+                    <li><a class="dropdown-item" href="#">Seguimiento</a></li>
+                    <li><a class="dropdown-item" href="#">Calidad</a></li>
+                    </ul>
+                    </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <main>
-            <div class="row text-center h-100">
-                <div class="col">
-                    <br>
-                    <h1>Resumen de tiempo Auditoría</h1>
-                    <p class="fst-italic">tiempo utilizado en los trabajos
-                    </p>
-
-                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="row text-center h-100">
+            <div class="col">
+                <br>
+                <h1>Resumen de tiempo Auditoría</h1>
+                <p class="fst-italic">tiempo utilizado en los trabajos
+                </p>
 
             </div>
-            <div class="row text-center pt-5">
-                <h2>Días Trabajados</h2>
-            </div>
 
-            <div class="row p-5 m-5">
-                <div class="col">
-                    <form action="" method="post">
-                        <div class="d-flex flex-row">
+        </div>
+        <div class="row text-center pt-5">
+            <h2>Días Trabajados</h2>
+        </div>
 
-                            <input class="form-control" type="text" name=""
-                                id="">
+        <div class="row p-5 m-5">
+            <div class="col">
+                <form action="" method="post">
+                    <div class="d-flex flex-row">
 
-                            <div>
-                                <button class="btn btn-primary mx-2"
-                                    type="submit">buscar</button>
-                            </div>
+                        <input class="form-control" type="text" name="" id="">
 
-
+                        <div>
+                            <button class="btn btn-primary mx-2" type="submit">buscar</button>
                         </div>
 
-                    </form>
 
-
-                </div>
-                <div class="col-2">
-                    <div>
-                        <button class="btn btn-primary mx-2" type="submit">imprimir</button>
                     </div>
-                </div>
-                <div class="co-2">
 
+                </form>
+
+
+            </div>
+            <div class="col-2">
+                <div>
+                    <button class="btn btn-primary mx-2" type="submit">imprimir</button>
                 </div>
             </div>
-            <table class="table table-light table-primary">
-                <thead>
-                    <tr>
-                        <th>
-                            Nombramiento No.
-                        </th>
-                        <th>
-                            Nombre Completo
-                        </th>
-                        <th>
-                            Cargo
-                        </th>
-                        <th>
-                            Días programados
-                        </th>
-                        <th>
-                            Días reales trabajados
-                        </th>
-                        <th>
-                            Diferencias
-                        </th>
-                        <th>
-                            Observaciones
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            21022023-1
-                        </td>
-                        <td>
-                            Carlos García
-                        </td>
-                        <td>
-                            Auditor
-                        </td>
-                        <td>
-                            100
-                        </td>
-                        <td>
-                            105
-                        </td>
-                        <td>
-                            -5
-                        </td>
-                        <td>
-                            Trabajo tiempo de más
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            21022023-2
-                        </td>
-                        <td>
-                            Pedro Jimenez
-                        </td>
-                        <td>
-                            Team
-                        </td>
-                        <td>
-                            80
-                        </td>
-                        <td>
-                            70
-                        </td>
-                        <td>
-                            10
-                        </td>
-                        <td>
-                            Trabajo tiempo suficiente
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="co-2">
 
-            <div class="row text-center pt-5">
-                <h2>Horas trabajadas</h2>
             </div>
-            
-            <table class="table table-light table-primary">
-                <thead class="thead-light">
-                    <tr>
-                        <th>Enero</th>
-                        <th>Febrero</th>
-                        <th>Marzo</th>
-                        <th>Abril</th>
-                        <th>Mayo</th>
-                        <th>Junio</th>
-                        <th>Julio</th>
-                        <th>Agosto</th>
-                        <th>Septiembre</th>
-                        <th>Octubre</th>
-                        <th>Noviembre</th>
-                        <th>diciembre</th>
-                        <th>Total Horas</th>
-                        <th>Diferencia</th>
-                        <th>Observaciones</th>
-                    </tr>   
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>70</td>
-                        <td>840</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+        </div>
+        <table class="table table-light table-primary">
+            <thead>
+                <tr>
+                    <th>
+                        Nombramiento No.
+                    </th>
+                    <th>
+                        Nombre Completo
+                    </th>
+                    <th>
+                        Cargo
+                    </th>
+                    <th>
+                        Días programados
+                    </th>
+                    <th>
+                        Días reales trabajados
+                    </th>
+                    <th>
+                        Diferencias
+                    </th>
+                    <th>
+                        Observaciones
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        21022023-1
+                    </td>
+                    <td>
+                        Carlos García
+                    </td>
+                    <td>
+                        Auditor
+                    </td>
+                    <td>
+                        100
+                    </td>
+                    <td>
+                        105
+                    </td>
+                    <td>
+                        -5
+                    </td>
+                    <td>
+                        Trabajo tiempo de más
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        21022023-2
+                    </td>
+                    <td>
+                        Pedro Jimenez
+                    </td>
+                    <td>
+                        Team
+                    </td>
+                    <td>
+                        80
+                    </td>
+                    <td>
+                        70
+                    </td>
+                    <td>
+                        10
+                    </td>
+                    <td>
+                        Trabajo tiempo suficiente
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-        </main>
-        <footer>
+        <div class="row text-center pt-5">
+            <h2>Horas trabajadas</h2>
+        </div>
 
-        </footer>
+        <table class="table table-light table-primary">
+            <thead class="thead-light">
+                <tr>
+                    <th>Enero</th>
+                    <th>Febrero</th>
+                    <th>Marzo</th>
+                    <th>Abril</th>
+                    <th>Mayo</th>
+                    <th>Junio</th>
+                    <th>Julio</th>
+                    <th>Agosto</th>
+                    <th>Septiembre</th>
+                    <th>Octubre</th>
+                    <th>Noviembre</th>
+                    <th>diciembre</th>
+                    <th>Total Horas</th>
+                    <th>Diferencia</th>
+                    <th>Observaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>70</td>
+                    <td>840</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+    <footer>
+
+    </footer>
 
 
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
         </script>
-    </body>
+</body>
+
 </html>
